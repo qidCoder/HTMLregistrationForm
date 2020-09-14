@@ -10,7 +10,85 @@ Create a registration form using only HTML (no CSS)-->
     </head>
 
     <body>
-        <input>
+        <h1>My Registration Form</h1>
+
+        
+        <!--add in form: a form is responsible for all the data exchange between the user and the server.-->
+        <form><!--action= method= action is where the form info gets sent, method is how it gets sent-->
+            <!--make a table so all fields are ligned-->
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="first_name">First Name:</label></td>
+                        <td><input type="text" id="first_name" size="10"></td><!--input field, type attribute designates the way in which the input takes in certain info. type is optional-->
+                    </tr>
+
+                    <tr>
+                        <td><label for="last_name">Last Name:</label></td>
+                        <td><input type="text" id="last_name" size="10"></td><!--box width of 10-->
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email" size="10"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="password" id="password" size="10"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="pwConf">PW Confirm</label></td>
+                        <td><input type="password" id="pwConf" size="10"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="DOB">Birthday</label></td>
+                        <td><input type="date" id="DOB" size="10"></td>
+                    </tr>
+
+                    <tr>
+                        <!--gender radio buttons-->
+                        <td>
+                        <input type="radio" id="male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female">
+                        <label for="female">Female</label>
+                        
+                        <input type="radio" id="other">
+                        <label for="other">Other</label></td>
+                    </tr>
+
+                    <tr>
+                        <!--decription box-->
+                        <td>
+                        <label for="description">A short description about yourself:</label>
+                        <p></p>
+                        <textarea rows="3" cols="28"></textarea><!--rows and cols sets text box size-->
+                        <!--<input type="text" id="description">-->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!--dropdown-->
+                        <td><label for="dropdown">Favorite Language</label>
+                        <select>
+                            <option>JavaScript</option>
+                            <option>CSS</option>
+                            <option>HTML</option>
+                            <option>Python</option>
+                            <option>C</option>
+                        </select></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="submit"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
 
     </body>
 </html>
